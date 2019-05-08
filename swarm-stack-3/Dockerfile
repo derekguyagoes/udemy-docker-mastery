@@ -1,8 +1,8 @@
-FROM drupal:8.5
+FROM drupal:8.6
 
 
-RUN apt-get update && apt-get install -y git \
-    && rm -rf /var/lib/apt/lists/*
+# RUN apt-get update && apt-get install -y git \
+#     && rm -rf /var/lib/apt/lists/*
 
 # this next part was corrected in 2018 to be more clear on how you'd typically 
 # customize your own theme. first you need to clone the theme into this repo
